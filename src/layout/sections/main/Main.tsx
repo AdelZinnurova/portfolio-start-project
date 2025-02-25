@@ -35,6 +35,8 @@ const Photo = styled.img`
 
 const MainTitle = styled.h1``
 
-const Name = styled.span``
+const Name = styled.span`
+    display: block
+`
 
 const Link = styled.a ``
