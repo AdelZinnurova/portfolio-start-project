@@ -12,6 +12,8 @@ export const Main = () => {
                     <MainTitle>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web
                         experiences for
                         end-users.</MainTitle>
+                    <Link href={'#'}>About me</Link>
+                    <Link href={'#'}>Projects</Link>
                 </div>
 
                 <Photo src={photo} alt="Photo"/>
@@ -33,4 +35,6 @@ const Photo = styled.img`
 
 const MainTitle = styled.h1``
 
-const Name = styled.h2``
+const Name = styled.span``
+
+const Link = styled.a ``
