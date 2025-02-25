@@ -4,12 +4,14 @@ import {Main} from "./layout/sections/main/Main.tsx";
 import {Skills} from "./layout/sections/skills/Skills.tsx";
 import {Projects} from "./layout/sections/projects/Projects.tsx";
 import {Contact} from "./layout/sections/contact/Contact.tsx";
+import {About} from "./layout/sections/about/About.tsx";
 
 function App() {
     return (
         <div className="App">
             <Header />
             <Main/>
+            <About/>
             <Skills/>
             <Projects/>
             <Contact/>
