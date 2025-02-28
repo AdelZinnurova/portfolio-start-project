@@ -20,4 +20,5 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: ${Theme.colors.secondaryBg};
+    padding: 20px 0;
 `
