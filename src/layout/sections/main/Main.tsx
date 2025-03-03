@@ -37,18 +37,6 @@ const StyledMain = styled.div`
     min-height: 100vh;
     background-color: ${Theme.colors.primaryBg};
     display: flex;
-    //z-index: -1;
-    //
-    // &::after {
-    //     content: '';
-    //     display: block;
-    //     width: 100vw;
-    //     height: 128px;
-        //     background-color: ${Theme.colors.secondaryBg};
-    //
-    //     position: absolute;
-    //     z-index: 1;
-    // }
 `
 
 const SmallText = styled.span`
@@ -62,6 +50,7 @@ const MainTitle = styled.h1`
     font-size: 18px;
     color: ${Theme.colors.font};
     margin-bottom: 50px;
+    max-width: 435px;
 `
 
 const Name = styled.span`
@@ -78,33 +67,29 @@ const LinkWrapper = styled.div`
 `
 
 const PhotoWrapper = styled.div`
+    width: 500px;
+    height: 444px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &::before {
         content: '';
         display: inline-block;
-        width: 486px;
+        width: 500px;
         height: 486px;
         background-color: ${Theme.colors.accentV};
         border-radius: 50%;
 
         position: absolute;
         top: 78px;
-        left: -34px;
+        left: 0;
         z-index: -1;
-    }
-
-    &::after {
-        content: '';
-        display: inline-block;
-        width: 486px;
-        height: 128px;
-        background-color: ${Theme.colors.primaryBg};
-
-        position: absolute;
-        top: 444px;
-        right: -14px;
     }
 `
 
@@ -112,5 +97,5 @@ const Photo = styled.img`
     width: 444px;
     height: 444px;
     object-fit: cover;
-    //border: 1px solid red;
+    border: 1px solid red;
 `
