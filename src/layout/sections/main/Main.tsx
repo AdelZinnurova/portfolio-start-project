@@ -1,42 +1,140 @@
 import styled from "styled-components";
 import photo from '../../../assets/image/Photo.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {Container} from "../../../components/Container.ts";
+import {Theme} from "../../../styles/Theme.ts";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper alignItems="center" justifyContent="space-between">
-                <div>
-                    <span>Hello, i’m</span>
-                    <Name>Jayjay D. Dinero</Name>
-                    <MainTitle>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web
-                        experiences for
-                        end-users.</MainTitle>
-                    <Link href={'#'}>About me</Link>
-                    <Link href={'#'}>Projects</Link>
-                </div>
+            <Container>
+                <FlexWrapper alignItems="center" justifyContent="space-between">
+                    <div>
+                        <SmallText>Hello, i’m</SmallText>
+                        <Name>Jayjay D. Dinero</Name>
+                        <MainTitle>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web
+                            experiences for
+                            end-users.</MainTitle>
 
-                <Photo src={photo} alt="Photo"/>
-            </FlexWrapper>
+                        <ButtonsWrapper>
+                            <PrimaryLink href="#">About me</PrimaryLink>
+                            <SecondaryLink href="#">Projects</SecondaryLink>
+                        </ButtonsWrapper>
+                    </div>
+
+                    <PhotoWrapper>
+                        <Photo src={photo} alt="Photo"/>
+                    </PhotoWrapper>
+
+                </FlexWrapper>
+            </Container>
         </StyledMain>
     );
 };
 
 const StyledMain = styled.div`
     min-height: 100vh;
-    background-color: plum;
+    background-color: ${Theme.colors.primaryBg};
+    display: flex;
+    //z-index: -1;
+    //
+    // &::after {
+    //     content: '';
+    //     display: block;
+    //     width: 100vw;
+    //     height: 128px;
+    //     background-color: ${Theme.colors.secondaryBg};
+    //
+    //     position: absolute;
+    //     z-index: 1;
+    // }
+`
+
+const SmallText = styled.span`
+    font-weight: 600;
+    font-size: 32px;
+    color: ${Theme.colors.font};
+`
+
+const MainTitle = styled.h1`
+    font-weight: 500;
+    font-size: 18px;
+    color: ${Theme.colors.font};
+    margin-bottom: 50px;
+`
+
+const Name = styled.span`
+    display: block;
+    font-weight: 600;
+    font-size: 52px;
+    color: ${Theme.colors.font};
+    margin: 6px 0 12px 0;
+`
+
+// Обертка для кнопок
+const ButtonsWrapper = styled.div`
+    display: flex;
+    gap: 32px;
+`
+
+// Базовый стиль для ссылок
+const BaseLink = styled.a`
+    border: 2px solid ${Theme.colors.accentV};
+    border-radius: 8px;
+    padding: 12px 34px;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: ${Theme.colors.font};
+`
+
+// Основная кнопка (фиолетовая)
+const PrimaryLink = styled(BaseLink)`
+    border-color: ${Theme.colors.accentV};
+    background-color: ${Theme.colors.accentV};
+`
+
+// Вторая кнопка (чёрная)
+const SecondaryLink = styled(BaseLink)`
+    border-color: ${Theme.colors.accentV};
+`
+
+const PhotoWrapper = styled.div`
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 486px;
+        height: 486px;
+        background-color: ${Theme.colors.accentV};
+        border-radius: 50%;
+
+        position: absolute;
+        top: 78px;
+        left: -34px;
+        z-index: -1;
+    }
+    
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 486px;
+        height: 128px;
+        background-color: ${Theme.colors.primaryBg};
+
+        position: absolute;
+        top: 444px;
+        right: -14px;
+    }
+
 `
 
 const Photo = styled.img`
     width: 444px;
     height: 444px;
     object-fit: cover;
+    //border: 1px solid red;
+    
 `
-
-const MainTitle = styled.h1``
-
-const Name = styled.span`
-    display: block
-`
-
-const Link = styled.a ``

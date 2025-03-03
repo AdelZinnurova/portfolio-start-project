@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
-    
+
     body {
         margin: 0;
         font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,18 +17,20 @@ export const GlobalStyle = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        
-        color: ${Theme.colors.font}
+
+        color: ${Theme.colors.font};
+        line-height: 1.2;
     }
-    
+
     a {
         text-decoration: none;
+        color: ${Theme.colors.font};
     }
-    
+
     ul {
         list-style: none;
     }
-    
+
     button {
         background-color: unset;
         border: none;
