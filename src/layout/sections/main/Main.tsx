@@ -3,6 +3,8 @@ import photo from '../../../assets/image/Photo.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container.ts";
 import {Theme} from "../../../styles/Theme.ts";
+import {PrimaryLink} from "../../../components/PrimaryLink.tsx";
+import {SecondaryLink} from "../../../components/SecondaryLink.tsx";
 
 export const Main = () => {
     return (
@@ -16,10 +18,10 @@ export const Main = () => {
                             experiences for
                             end-users.</MainTitle>
 
-                        <ButtonsWrapper>
+                        <LinkWrapper>
                             <PrimaryLink href="#">About me</PrimaryLink>
                             <SecondaryLink href="#">Projects</SecondaryLink>
-                        </ButtonsWrapper>
+                        </LinkWrapper>
                     </div>
 
                     <PhotoWrapper>
@@ -42,7 +44,7 @@ const StyledMain = styled.div`
     //     display: block;
     //     width: 100vw;
     //     height: 128px;
-    //     background-color: ${Theme.colors.secondaryBg};
+        //     background-color: ${Theme.colors.secondaryBg};
     //
     //     position: absolute;
     //     z-index: 1;
@@ -70,38 +72,15 @@ const Name = styled.span`
     margin: 6px 0 12px 0;
 `
 
-// Обертка для кнопок
-const ButtonsWrapper = styled.div`
+const LinkWrapper = styled.div`
     display: flex;
     gap: 32px;
-`
-
-// Базовый стиль для ссылок
-const BaseLink = styled.a`
-    border: 2px solid ${Theme.colors.accentV};
-    border-radius: 8px;
-    padding: 12px 34px;
-
-    font-weight: 600;
-    font-size: 16px;
-    color: ${Theme.colors.font};
-`
-
-// Основная кнопка (фиолетовая)
-const PrimaryLink = styled(BaseLink)`
-    border-color: ${Theme.colors.accentV};
-    background-color: ${Theme.colors.accentV};
-`
-
-// Вторая кнопка (чёрная)
-const SecondaryLink = styled(BaseLink)`
-    border-color: ${Theme.colors.accentV};
 `
 
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 1;
-    
+
     &::before {
         content: '';
         display: inline-block;
@@ -115,7 +94,7 @@ const PhotoWrapper = styled.div`
         left: -34px;
         z-index: -1;
     }
-    
+
     &::after {
         content: '';
         display: inline-block;

@@ -45,6 +45,7 @@ const TextDescription = styled.p`
     color: ${Theme.colors.font};
     margin-top: 8px;
     margin-bottom: 25px;
+    line-height: 1.78;
 `
 
 const Text = styled.p`

@@ -28,7 +28,7 @@ const StyledSkill = styled.div`
     width: 341px;
     height: 338px;
     padding-top: 62px;
-    margin: 32px 0 16px 0;
+    margin: 0 0 16px 0;
 `
 
 const SkillTitle = styled.h3`

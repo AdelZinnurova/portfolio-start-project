@@ -6,4 +6,5 @@ export const SectionTitle = styled.h2`
     font-weight: 600;
     font-size: 32px;
     color: ${Theme.colors.accentV};
+    margin-bottom: 16px;
 `

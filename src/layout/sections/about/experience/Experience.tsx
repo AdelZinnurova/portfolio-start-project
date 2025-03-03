@@ -24,7 +24,7 @@ const StyledExperience = styled.div`
     max-width: 256px;
     height: 254px;
     width: 100%;
-    padding: 97px 46px 24px 28px;
+    padding: 77px 46px 24px 28px;
     margin-top: 58px;
 `
 
@@ -33,4 +33,5 @@ const ExperienceTitle = styled.span`
     font-size: 24px;
     color: ${Theme.colors.font};
     margin-top: 10px;
+    text-transform: uppercase;
 `
