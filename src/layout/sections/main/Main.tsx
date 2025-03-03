@@ -25,7 +25,6 @@ export const Main = () => {
                     <PhotoWrapper>
                         <Photo src={photo} alt="Photo"/>
                     </PhotoWrapper>
-
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -128,7 +127,6 @@ const PhotoWrapper = styled.div`
         top: 444px;
         right: -14px;
     }
-
 `
 
 const Photo = styled.img`
@@ -136,5 +134,4 @@ const Photo = styled.img`
     height: 444px;
     object-fit: cover;
     //border: 1px solid red;
-    
 `
