@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon.tsx";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {Theme} from "../../../../styles/Theme.ts";
 
 type ExperiencePropsType = {
     iconId: string;
@@ -19,10 +20,17 @@ export const Experience = (props: ExperiencePropsType) => {
 };
 
 const StyledExperience = styled.div`
-    background-color: aquamarine;
-    margin: 1px;
+    background-color: ${Theme.colors.accentG};
     max-width: 256px;
+    height: 254px;
     width: 100%;
+    padding: 97px 46px 24px 28px;
+    margin-top: 58px;
 `
 
-const ExperienceTitle = styled.span``
+const ExperienceTitle = styled.span`
+    font-weight: 600;
+    font-size: 24px;
+    color: ${Theme.colors.font};
+    margin-top: 10px;
+`
