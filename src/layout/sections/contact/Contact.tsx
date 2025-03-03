@@ -2,21 +2,24 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {ContactForm} from "./contactForm/ContactForm.tsx";
 import {ContactLink} from "./contactLink/ContactLink.tsx";
+import {Container} from "../../../components/Container.ts";
+import {Theme} from "../../../styles/Theme.ts";
 
 export const Contact = () => {
     return (
         <StyledContact>
-            <FlexWrapper justifyContent={'space-between'}>
-                <ContactLink/>
-                <ContactForm/>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper justifyContent={'space-between'}>
+                    <ContactLink/>
+                    <ContactForm/>
+                </FlexWrapper>
+            </Container>
         </StyledContact>
     );
 };
 
 const StyledContact = styled.section`
-    min-height: 50vh;
-    background-color: gainsboro;
+    background-color: ${Theme.colors.primaryBg};
 `
 
 

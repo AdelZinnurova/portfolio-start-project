@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../../../components/SectionTitle.tsx";
 import {Icon} from "../../../../components/icon/Icon.tsx";
+import {Theme} from "../../../../styles/Theme.ts";
 
 export const ContactLink = () => {
     return (
@@ -35,7 +36,12 @@ export const ContactLink = () => {
 
 const StyledContactLink = styled.div``
 
-const Text = styled.p``
+const Text = styled.p`
+    font-weight: 500;
+    font-size: 18px;
+    color: ${Theme.colors.font};
+    margin-bottom: 24px;
+`
 
 const SocialList = styled.ul`
     display: flex;
