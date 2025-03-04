@@ -23,12 +23,22 @@ export const Skill = (props: SkillPropsType) => {
 
 
 const StyledSkill = styled.div`
-    border: 3px solid ${Theme.colors.accentV};
     border-radius: 16px;
     width: 341px;
     height: 338px;
-    padding-top: 62px;
-    margin: 0 0 16px 0;
+    padding: 62px 20px 20px;
+    //margin: 0 0 16px 0;
+
+    &:nth-child(-n+3) {
+        margin: 0 0 16px 0;
+    }
+    
+    &:nth-of-type(odd) {
+        border: 3px solid ${Theme.colors.accentV};
+    }
+    &:nth-of-type(even) {
+        border: 3px solid ${Theme.colors.accentG};
+    }
 `
 
 const SkillTitle = styled.h3`

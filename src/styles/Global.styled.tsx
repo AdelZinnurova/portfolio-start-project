@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
         color: ${Theme.colors.font};
+        cursor: pointer;
     }
 
     ul {
@@ -34,6 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
+        cursor: pointer ;
     }
     
     section {

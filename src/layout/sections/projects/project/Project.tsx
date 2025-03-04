@@ -58,6 +58,18 @@ const Text = styled.p`
 const LinkWrapper = styled.div`
     display: flex;
     gap: 18px;
+    
+    ${PrimaryLink} {
+        width: 145px;
+        height: 43px;
+        padding-top: 8px;
+    }
+
+    ${SecondaryLink} {
+        width: 145px;
+        height: 43px;
+        padding-top: 8px;
+    }
 `
 
 

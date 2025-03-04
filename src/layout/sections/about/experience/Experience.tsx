@@ -22,8 +22,8 @@ export const Experience = (props: ExperiencePropsType) => {
 const StyledExperience = styled.div`
     background-color: ${Theme.colors.accentG};
     max-width: 256px;
-    height: 254px;
     width: 100%;
+    height: 254px;
     padding: 77px 46px 24px 28px;
     margin-top: 58px;
     

@@ -10,4 +10,8 @@ export const Button = styled.button`
     font-weight: 500;
     font-size: 16px;
     color: ${Theme.colors.font};
+
+    &:hover {
+        transform: translateY(2px);
+    }
 `

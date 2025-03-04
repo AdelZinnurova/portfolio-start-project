@@ -50,5 +50,13 @@ const SocialList = styled.ul`
 
 const SocialItem = styled.li``
 
-const SocialLink = styled.a``
+const SocialLink = styled.a`
+    display: inline-block;
+    color: ${Theme.colors.accentV};
+    
+    &:hover {
+        color: ${Theme.colors.accentG};
+        transform: translateY(2px);
+    }
+`
 
