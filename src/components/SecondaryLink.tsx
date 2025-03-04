@@ -14,4 +14,8 @@ export const SecondaryLink = styled.a`
     text-align: center;
 
     border-color: ${Theme.colors.accentV};
+
+    &:hover {
+        transform: translateY(2px);
+    }
 `

@@ -1,29 +1,36 @@
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.ts";
 
 export const Menu = () => {
     return (
         <StyledMenu>
-            <ul>
-                <li>
+            <List>
+                <ListItem>
                     <a href="/">Home</a>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                     <a href="/">About me</a>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                     <a href="/">Projects</a>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                     <a href="/">Contact</a>
-                </li>
-            </ul>
+                </ListItem>
+            </List>
         </StyledMenu>
     );
 };
 
-const StyledMenu = styled.nav`
-    ul {
-        display: flex;
-        gap: 52px;
+const StyledMenu = styled.nav``
+
+const List = styled.ul`
+    display: flex;
+    gap: 52px;
+`
+
+const ListItem = styled.li`
+    &:hover a {
+        color: ${Theme.colors.accentV};
     }
 `

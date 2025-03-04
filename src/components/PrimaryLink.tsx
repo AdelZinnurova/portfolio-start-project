@@ -15,4 +15,8 @@ export const PrimaryLink = styled.a`
 
     border-color: ${Theme.colors.accentV};
     background-color: ${Theme.colors.accentV};
+    
+    &:hover {
+        transform: translateY(2px);
+    }
 `

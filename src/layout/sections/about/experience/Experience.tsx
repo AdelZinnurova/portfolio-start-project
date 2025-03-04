@@ -26,6 +26,10 @@ const StyledExperience = styled.div`
     width: 100%;
     padding: 77px 46px 24px 28px;
     margin-top: 58px;
+    
+    &:hover {
+        background-color: ${Theme.colors.accentV};
+    }
 `
 
 const ExperienceTitle = styled.span`
