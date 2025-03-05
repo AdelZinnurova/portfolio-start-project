@@ -4,6 +4,7 @@ import {Menu} from "../../components/menu/Menu.tsx";
 import {Container} from "../../components/Container.ts";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Theme} from "../../styles/Theme.ts";
+import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
 
 export const Header = () => {
     return (
@@ -12,6 +13,7 @@ export const Header = () => {
                 <FlexWrapper justifyContent={'space-between'} alignItems={'center'}>
                     <Logo/>
                     <Menu/>
+                    <MobileMenu/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>

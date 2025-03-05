@@ -24,7 +24,7 @@ export const About = () => {
                         web experience for end users.</Text>
                 </FlexWrapper>
 
-                <FlexWrapper justifyContent={'space-between'}>
+                <FlexWrapper justifyContent={'space-between'} flexWrap={'wrap'}>
                     <Experience iconId={'UiUxDesigning'} title={'UI & UX DESIGNING'}/>
                     <Experience iconId={'WebDevelopment'} title={'Web development'}/>
                     <Experience iconId={'MobileDevelopment'} title={'Mobile Development'}/>

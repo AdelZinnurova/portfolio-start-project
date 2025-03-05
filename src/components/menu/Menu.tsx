@@ -22,12 +22,19 @@ export const Menu = () => {
     );
 };
 
-const StyledMenu = styled.nav``
-
-const List = styled.ul`
-    display: flex;
-    gap: 52px;
+const StyledMenu = styled.nav`
+    ul {
+        display: flex;
+        gap: 52px;
+        justify-content: center;
+    }
+    
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
+
+const List = styled.ul``
 
 const ListItem = styled.li`
     &:hover a {

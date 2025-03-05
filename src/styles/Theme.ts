@@ -7,5 +7,10 @@ export const Theme = {
         project: '#31313f',
         placeholder: '#93939a',
         font: '#fff',
+    },
+
+    media: {
+        tablet: 'screen and (max-width: 768px)',
+        mobile: 'screen and (max-width: 576px)',
     }
 }

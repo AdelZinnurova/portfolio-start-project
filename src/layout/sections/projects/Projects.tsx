@@ -16,7 +16,7 @@ export const Projects = () => {
                 <SectionText>I have worked on many projects over the course of being a Web Developer, here are a few of
                     my
                     live, real-world projects</SectionText>
-                <FlexWrapper justifyContent={'space-between'}>
+                <FlexWrapper justifyContent={'space-between'} flexWrap={'wrap'}>
                     <Project title={'TWINDER'}
                              text={'A live Geolocation app for finding tweets and twitter users around you.'}
                              src={socialImgOne}/>
