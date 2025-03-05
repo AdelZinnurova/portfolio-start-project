@@ -5,11 +5,11 @@ import {Theme} from "../../../styles/Theme.ts";
 export const MobileMenu = () => {
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span/>
             </BurgerButton>
 
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
                 <ul>
                     <li>
                         <a href="/">Home</a>
@@ -77,7 +77,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         background-color: ${Theme.colors.font};
         position: absolute;
         left: 40px;
-        bottom: 50px;
+        bottom: 61px;
 
         ${props => props.isOpen && css<{ isOpen: boolean }>`
             background-color: rgba(255, 255, 255, 0);
