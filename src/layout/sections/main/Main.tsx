@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper alignItems="center" justifyContent="space-between">
+                <FlexWrapper alignItems="center" justifyContent="space-between" flexWrap={'wrap'}>
                     <div>
                         <SmallText>Hello, i’m</SmallText>
                         <Name>Jayjay D. Dinero</Name>
@@ -78,6 +78,11 @@ const PhotoWrapper = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media ${Theme.media.mobile} {
+        width: 326px;
+        height: 300px;
+    }
+
     &::before {
         content: '';
         display: inline-block;
@@ -90,6 +95,13 @@ const PhotoWrapper = styled.div`
         top: 78px;
         left: 0;
         z-index: -1;
+
+        @media ${Theme.media.mobile} {
+            width: 326px;
+            height: 320px;
+            
+            top: 60px;
+        }
     }
 `
 
@@ -98,4 +110,9 @@ const Photo = styled.img`
     height: 444px;
     object-fit: cover;
     border: 1px solid red;
+    
+    @media ${Theme.media.mobile} {
+        width: 300px;
+        height: 300px;
+    }
 `
