@@ -27,10 +27,11 @@ const StyledSkill = styled.div`
     width: 341px;
     height: 338px;
     padding: 62px 20px 20px;
-    //margin: 0 0 16px 0;
+    
+    flex-grow: 1;
 
-    &:nth-child(-n+3) {
-        margin: 0 0 16px 0;
+    &:nth-child(-n+6) {
+        margin: 0 5px 16px 5px;
     }
     
     &:nth-of-type(odd) {
