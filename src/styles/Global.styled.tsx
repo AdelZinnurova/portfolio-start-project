@@ -35,11 +35,14 @@ export const GlobalStyle = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
-        cursor: pointer ;
-    }
-    
-    section {
-        padding: 55px 0;
+        cursor: pointer;
     }
 
+    section {
+        padding: 55px 0;
+
+        @media ${Theme.media.mobile} {
+            padding: 25px 0;
+        }
+    }
 `

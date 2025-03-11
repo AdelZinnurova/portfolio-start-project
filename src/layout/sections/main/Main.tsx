@@ -5,12 +5,13 @@ import {Container} from "../../../components/Container.ts";
 import {Theme} from "../../../styles/Theme.ts";
 import {PrimaryLink} from "../../../components/PrimaryLink.tsx";
 import {SecondaryLink} from "../../../components/SecondaryLink.tsx";
+import {font} from "../../../styles/Common.ts";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper alignItems="center" justifyContent="space-between" flexWrap={'wrap'}>
+                <FlexWrapper alignItems="center" justifyContent="space-around" flexWrap={'wrap'}>
                     <div>
                         <SmallText>Hello, i’m</SmallText>
                         <Name>Jayjay D. Dinero</Name>
@@ -54,10 +55,8 @@ const MainTitle = styled.h1`
 `
 
 const Name = styled.span`
+    ${font({family: 'Poppins', weight: 600, Fmax: 52, Fmin: 38})}
     display: block;
-    font-weight: 600;
-    font-size: 52px;
-    color: ${Theme.colors.font};
     margin: 6px 0 12px 0;
 `
 
@@ -99,7 +98,6 @@ const PhotoWrapper = styled.div`
         @media ${Theme.media.mobile} {
             width: 326px;
             height: 320px;
-            
             top: 60px;
         }
     }

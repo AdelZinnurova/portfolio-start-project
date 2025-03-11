@@ -19,4 +19,9 @@ export const PrimaryLink = styled.a`
     &:hover {
         transform: translateY(2px);
     }
+
+    @media ${Theme.media.mobile} {
+        width: 140px;
+        height: 48px;
+    }
 `

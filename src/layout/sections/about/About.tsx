@@ -46,6 +46,11 @@ const TextDescription = styled.p`
     margin-top: 8px;
     margin-bottom: 25px;
     line-height: 1.78;
+
+    // @media ${Theme.media.mobile} {
+    //     font-weight: 400;
+    //     font-size: 16px;
+    // }
 `
 
 const Text = styled.p`
@@ -55,5 +60,11 @@ const Text = styled.p`
     color: ${Theme.colors.font};
     margin-left: 22px;
     max-width: 820px;
+
+    // @media ${Theme.media.mobile} {
+    //     font-weight: 400;
+    //     font-size: 20px;
+    //     margin-left: 12px;
+    // }
 `
 
