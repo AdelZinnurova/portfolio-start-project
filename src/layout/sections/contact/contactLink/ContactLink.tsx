@@ -41,11 +41,19 @@ const Text = styled.p`
     font-size: 18px;
     color: ${Theme.colors.font};
     margin-bottom: 24px;
+
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
 
 const SocialList = styled.ul`
     display: flex;
     gap: 16px;
+
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
 
 const SocialItem = styled.li``

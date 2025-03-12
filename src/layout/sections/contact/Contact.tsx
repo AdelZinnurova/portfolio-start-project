@@ -20,6 +20,12 @@ export const Contact = () => {
 
 const StyledContact = styled.section`
     background-color: ${Theme.colors.primaryBg};
+    
+    @media ${Theme.media.tablet} {
+        ${FlexWrapper} {
+            flex-direction: column;
+        }
+    }
 `
 
 
