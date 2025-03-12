@@ -35,6 +35,9 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
     background-color: ${Theme.colors.primaryBg};
+    ${FlexWrapper} {
+        gap: 10px;
+    }
 `
 
 const SectionText = styled.p`

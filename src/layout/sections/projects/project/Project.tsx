@@ -26,10 +26,22 @@ export const Project = (props: ProjectPropsType) => {
 
 const StyledProject = styled.div`
     background-color: ${Theme.colors.project};
-    max-width: 343px;
+    width: 270px;
     height: 417px;
-    width: 100%;
     padding: 16px 16px 22px 16px;
+    
+    flex-grow: 1;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+
+    &:nth-child(-n+2) {
+        margin-bottom: 10px;
+    }
+    
+    @media ${Theme.media.desktop} {
+        max-width: 343px;
+    }
 `
 
 const Image = styled.img`
