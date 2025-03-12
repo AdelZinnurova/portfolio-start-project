@@ -5,6 +5,7 @@ import {Experience} from "./experience/Experience.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.ts";
+import {font} from "../../../styles/Common.ts";
 
 export const About = () => {
     return (
@@ -37,6 +38,22 @@ export const About = () => {
 
 const StyledAbout = styled.section`
     background-color: ${Theme.colors.primaryBg};
+
+    ${Container} > ${FlexWrapper}:first-of-type {
+        gap: 15px;
+        margin-bottom: 38px;
+    }
+
+    ${Container} > ${FlexWrapper}:last-of-type {
+        gap: 15px;
+    }
+    
+    @media ${Theme.media.mobile} {
+        ${Container} > ${FlexWrapper}:first-of-type {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 `
 
 const TextDescription = styled.p`
@@ -46,25 +63,14 @@ const TextDescription = styled.p`
     margin-top: 8px;
     margin-bottom: 25px;
     line-height: 1.78;
-
-    // @media ${Theme.media.mobile} {
-    //     font-weight: 400;
-    //     font-size: 16px;
-    // }
 `
 
 const Text = styled.p`
     display: inline-block;
-    font-weight: 500;
-    font-size: 24px;
     color: ${Theme.colors.font};
-    margin-left: 22px;
-    max-width: 820px;
 
-    // @media ${Theme.media.mobile} {
-    //     font-weight: 400;
-    //     font-size: 20px;
-    //     margin-left: 12px;
-    // }
+    ${font({family: 'Poppins', weight: 500, Fmax: 24, Fmin: 20})}
+    
+    flex-grow: 1;
 `
 

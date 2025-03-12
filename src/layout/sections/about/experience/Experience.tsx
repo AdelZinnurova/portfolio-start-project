@@ -21,14 +21,18 @@ export const Experience = (props: ExperiencePropsType) => {
 
 const StyledExperience = styled.div`
     background-color: ${Theme.colors.accentG};
-    max-width: 256px;
-    width: 100%;
+    width: 200px;
     height: 254px;
     padding: 77px 46px 24px 28px;
-    margin-top: 58px;
+    
+    flex-grow: 1;
     
     &:hover {
         background-color: ${Theme.colors.accentV};
+    }
+    
+    ${FlexWrapper} {
+        gap: 10px;
     }
 `
 
@@ -36,6 +40,5 @@ const ExperienceTitle = styled.span`
     font-weight: 600;
     font-size: 24px;
     color: ${Theme.colors.font};
-    margin-top: 10px;
     text-transform: uppercase;
 `
