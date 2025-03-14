@@ -43,10 +43,6 @@ const StyledAbout = styled.section`
         gap: 15px;
         margin-bottom: 38px;
     }
-
-    ${Container} > ${FlexWrapper}:last-of-type {
-        gap: 15px;
-    }
     
     @media ${Theme.media.mobile} {
         ${Container} > ${FlexWrapper}:first-of-type {
@@ -88,7 +84,7 @@ const GridContainer = styled.div`
     }
 
     // @media ${Theme.media.tablet} {
-    //     grid-template-columns: repeat(2, 1fr);
+    //     grid-template-columns: repeat(3, 1fr);
     // }
     
     @media ${Theme.media.mobile} {

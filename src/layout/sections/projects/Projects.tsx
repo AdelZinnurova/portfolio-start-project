@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Project} from "./project/Project.tsx";
 import socialImgOne from "./../../../assets/image/Project-1.webp"
 import socialImgTwo from "./../../../assets/image/Project-2.webp"
@@ -16,7 +15,7 @@ export const Projects = () => {
                 <SectionText>I have worked on many projects over the course of being a Web Developer, here are a few of
                     my
                     live, real-world projects</SectionText>
-                <FlexWrapper justifyContent={'space-between'} flexWrap={'wrap'}>
+                <GridContainer>
                     <Project title={'TWINDER'}
                              text={'A live Geolocation app for finding tweets and twitter users around you.'}
                              src={socialImgOne}/>
@@ -26,7 +25,7 @@ export const Projects = () => {
                     <Project title={'MOOVE'}
                              text={'Mobile app for booking instant pickup & dropoff accross major cities.'}
                              src={socialImgThree}/>
-                </FlexWrapper>
+                </GridContainer>
             </Container>
         </StyledProjects>
     );
@@ -35,9 +34,6 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
     background-color: ${Theme.colors.primaryBg};
-    ${FlexWrapper} {
-        gap: 10px;
-    }
 `
 
 const SectionText = styled.p`
@@ -46,4 +42,19 @@ const SectionText = styled.p`
     line-height: 1.78;
     color: ${Theme.colors.font};
     margin-bottom: 36px;
+`
+
+const GridContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 343px);
+    grid-auto-rows: 417px;
+    gap: 16px;
+    
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media ${Theme.media.tablet} {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `

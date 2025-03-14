@@ -26,28 +26,15 @@ export const Project = (props: ProjectPropsType) => {
 
 const StyledProject = styled.div`
     background-color: ${Theme.colors.project};
-    width: 270px;
-    height: 417px;
+    width: 100%;
+    height: 100%;
     padding: 16px 16px 22px 16px;
-    
-    flex-grow: 1;
-    //display: flex;
-    //flex-direction: column;
-    //align-items: center;
-
-    &:nth-child(-n+2) {
-        margin-bottom: 10px;
-    }
-    
-    @media ${Theme.media.desktop} {
-        max-width: 343px;
-    }
 `
 
 const Image = styled.img`
     max-width: 311px;
     width: 100%;
-    height: 173px;
+    max-height: 173px;
     object-fit: cover;
     opacity: 0.5;
 `
@@ -68,19 +55,18 @@ const Text = styled.p`
 `
 
 const LinkWrapper = styled.div`
-    display: flex;
-    gap: 18px;
     
     ${PrimaryLink} {
-        width: 145px;
-        height: 43px;
-        padding-top: 8px;
+        max-width: 145px;
+        max-height: 43px;
+        margin-right: 18px;
+        padding: 8px 25px;
     }
 
     ${SecondaryLink} {
-        width: 145px;
-        height: 43px;
-        padding-top: 8px;
+        max-width: 145px;
+        max-height: 43px;
+        padding: 8px 25px;
     }
 `
 

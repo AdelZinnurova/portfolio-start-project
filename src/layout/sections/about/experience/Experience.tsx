@@ -24,17 +24,23 @@ const StyledExperience = styled.div`
     background-color: ${Theme.colors.accentG};
     width: 100%;
     height: 100%;
-    //width: 200px;
-    //height: 254px;
     padding-left: 28px;
     padding-right: 28px;
+    
+    &:first-child {
+        background-color: ${Theme.colors.accentV};
+    }
+    
+    
+    //width: 200px;
+    //height: 254px;
     ////padding: 77px 46px 24px 28px;
     
     //flex-grow: 1;
     
-    &:hover {
-        background-color: ${Theme.colors.accentV};
-    }
+    // &:hover {
+    //     background-color: ${Theme.colors.accentV};
+    // }
     //
     // ${FlexWrapper} {
     //     gap: 10px;
