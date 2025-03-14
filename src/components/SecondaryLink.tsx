@@ -4,9 +4,13 @@ import {Theme} from "../styles/Theme.ts";
 export const SecondaryLink = styled.a`
     border: 2px solid ${Theme.colors.accentV};
     border-radius: 8px;
-    width: 160px;
+    max-width: 160px;
     height: 48px;
-    padding-top: 12px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-weight: 600;
     font-size: 16px;

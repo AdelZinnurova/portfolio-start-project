@@ -51,10 +51,10 @@ const GridContainer = styled.div`
     gap: 16px;
     
     @media screen and (max-width: 1100px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     
-    @media ${Theme.media.tablet} {
+    @media ${Theme.media.mobile} {
         grid-template-columns: repeat(1, 1fr);
     }
 `

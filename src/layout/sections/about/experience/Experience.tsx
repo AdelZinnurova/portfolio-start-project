@@ -30,21 +30,6 @@ const StyledExperience = styled.div`
     &:first-child {
         background-color: ${Theme.colors.accentV};
     }
-    
-    
-    //width: 200px;
-    //height: 254px;
-    ////padding: 77px 46px 24px 28px;
-    
-    //flex-grow: 1;
-    
-    // &:hover {
-    //     background-color: ${Theme.colors.accentV};
-    // }
-    //
-    // ${FlexWrapper} {
-    //     gap: 10px;
-    // }
 `
 
 const ExperienceTitle = styled.span`

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Theme} from "../../../../styles/Theme.ts";
 import {PrimaryLink} from "../../../../components/PrimaryLink.tsx";
 import {SecondaryLink} from "../../../../components/SecondaryLink.tsx";
+import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
 
 type ProjectPropsType = {
     title: string
@@ -12,14 +13,16 @@ type ProjectPropsType = {
 export const Project = (props: ProjectPropsType) => {
     return (
         <StyledProject>
-            <Image src={props.src} alt=''/>
-            <Title>{props.title}</Title>
-            <Text>{props.text}</Text>
+            <FlexWrapper flexDirection={'column'} justifyContent={'space-between'}>
+                <Image src={props.src} alt=''/>
+                <Title>{props.title}</Title>
+                <Text>{props.text}</Text>
 
-            <LinkWrapper>
-                <PrimaryLink href={'#'}>View Live</PrimaryLink>
-                <SecondaryLink href={'#'}>Github Repo</SecondaryLink>
-            </LinkWrapper>
+                <LinkWrapper>
+                    <PrimaryLink href={'#'}>View Live</PrimaryLink>
+                    <SecondaryLink href={'#'}>Github Repo</SecondaryLink>
+                </LinkWrapper>
+            </FlexWrapper>
         </StyledProject>
     );
 };
@@ -43,31 +46,18 @@ const Title = styled.h3`
     font-weight: 600;
     font-size: 24px;
     color: ${Theme.colors.accentV};
-    margin-top: 16px;
-    margin-bottom: 5px;
 `
 
 const Text = styled.p`
     font-weight: 500;
     font-size: 18px;
     color: ${Theme.colors.font};
-    margin-bottom: 24px;
 `
 
 const LinkWrapper = styled.div`
     
-    ${PrimaryLink} {
-        max-width: 145px;
-        max-height: 43px;
-        margin-right: 18px;
-        padding: 8px 25px;
-    }
-
-    ${SecondaryLink} {
-        max-width: 145px;
-        max-height: 43px;
-        padding: 8px 25px;
-    }
+    display: flex;
+    gap: 16px;
 `
 
 

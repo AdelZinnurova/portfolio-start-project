@@ -74,18 +74,12 @@ const GridContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 256px);
     grid-auto-rows: 254px;
-    //grid-template-rows: repeat(1,254px);
     gap: 16px;
     align-items: center;
-    //justify-items: center;
     
     @media screen and (max-width: 1100px) {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    // @media ${Theme.media.tablet} {
-    //     grid-template-columns: repeat(3, 1fr);
-    // }
     
     @media ${Theme.media.mobile} {
         grid-template-columns: repeat(1, 1fr);

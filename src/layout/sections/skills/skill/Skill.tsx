@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon.tsx";
 import {Theme} from "../../../../styles/Theme.ts";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {font} from "../../../../styles/Common.ts";
 
 type SkillPropsType = {
     iconId: string;
@@ -24,19 +25,14 @@ export const Skill = (props: SkillPropsType) => {
 
 const StyledSkill = styled.div`
     border-radius: 16px;
-    width: 341px;
-    height: 338px;
-    padding: 62px 20px 20px;
-    
-    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 76px 20px 30px;
 
-    &:nth-child(-n+6) {
-        margin: 0 5px 16px 5px;
-    }
-    
     &:nth-of-type(odd) {
         border: 3px solid ${Theme.colors.accentV};
     }
+
     &:nth-of-type(even) {
         border: 3px solid ${Theme.colors.accentG};
     }
@@ -44,9 +40,9 @@ const StyledSkill = styled.div`
 
 const SkillTitle = styled.h3`
     margin: 7px 0 15px 0;
-    font-weight: 600;
-    font-size: 24px;
     color: ${Theme.colors.font};
+
+    ${font({family: 'Poppins', weight: 600, Fmax: 24, Fmin: 20})}
 `
 
 const SkillText = styled.p`
