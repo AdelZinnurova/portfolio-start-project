@@ -20,6 +20,7 @@ const StyledContactForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-right: 80px;
     
     textarea {
         resize: none;
