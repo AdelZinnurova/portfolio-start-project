@@ -11,8 +11,8 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper alignItems="center" justifyContent="space-around" flexWrap={'wrap'}>
-                    <div>
+                <FlexWrapper alignItems="center" justifyContent={'space-between'} flexWrap={'wrap'} gap={'50px'}>
+                    <TextWrapper>
                         <SmallText>Hello, i’m</SmallText>
                         <Name>Jayjay D. Dinero</Name>
                         <MainTitle>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web
@@ -23,7 +23,7 @@ export const Main = () => {
                             <PrimaryLink href="#">About me</PrimaryLink>
                             <SecondaryLink href="#">Projects</SecondaryLink>
                         </LinkWrapper>
-                    </div>
+                    </TextWrapper>
 
                     <PhotoWrapper>
                         <Photo src={photo} alt="Photo"/>
@@ -37,6 +37,18 @@ export const Main = () => {
 const StyledMain = styled.section`
     background-color: ${Theme.colors.primaryBg};
     display: flex;
+    box-shadow: 0 128px 0 0 ${Theme.colors.secondaryBg};
+    margin-bottom: 128px;
+    padding-top: 128px;
+    padding-bottom: 0;
+`
+
+const TextWrapper = styled.div`
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 42px;
 `
 
 const SmallText = styled.span`
@@ -49,19 +61,18 @@ const MainTitle = styled.h1`
     font-weight: 500;
     font-size: 18px;
     color: ${Theme.colors.font};
-    margin-bottom: 50px;
     max-width: 435px;
 `
 
 const Name = styled.span`
     ${font({family: 'Poppins', weight: 600, Fmax: 52, Fmin: 38})}
     display: block;
-    margin: 6px 0 12px 0;
 `
 
 const LinkWrapper = styled.div`
     display: flex;
     gap: 32px;
+    margin-top: 20px;
 `
 
 const PhotoWrapper = styled.div`
