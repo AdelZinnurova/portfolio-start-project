@@ -24,8 +24,9 @@ const StyledExperience = styled.div`
     background-color: ${Theme.colors.accentG};
     width: 100%;
     height: 100%;
-    padding-left: 28px;
+    padding-left: 26px;
     padding-right: 28px;
+    padding-top: 66px;
     
     &:first-child {
         background-color: ${Theme.colors.accentV};

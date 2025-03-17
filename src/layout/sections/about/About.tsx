@@ -19,8 +19,8 @@ export const About = () => {
                     UI design principles.
                     Here are the major skiills i have. </TextDescription>
 
-                <FlexWrapper alignItems={'center'}>
-                    <Icon iconId={'five'} width={'112'} height={'71'} viewBox={'0 0 112 71'}/>
+                <FlexWrapper>
+                    <Icon iconId={'five'} width={'165'} height={'86'} viewBox={'0 0 120 81'}/>
                     <Text>Years of experience. Specialised in building apps, while ensuring a seamless
                         web experience for end users.</Text>
                 </FlexWrapper>
@@ -41,7 +41,7 @@ const StyledAbout = styled.section`
 
     ${Container} > ${FlexWrapper}:first-of-type {
         gap: 15px;
-        margin-bottom: 38px;
+        margin-bottom: 46px;
     }
     
     @media ${Theme.media.mobile} {
@@ -57,7 +57,7 @@ const TextDescription = styled.p`
     font-size: 18px;
     color: ${Theme.colors.font};
     margin-top: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     line-height: 1.78;
 `
 
