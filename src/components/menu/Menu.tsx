@@ -1,7 +1,8 @@
+import React from "react";
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.ts";
 
-export const Menu = () => {
+export const Menu: React.FC = () => {
     return (
         <StyledMenu>
             <List>
@@ -27,10 +28,6 @@ const StyledMenu = styled.nav`
         display: flex;
         gap: 52px;
         justify-content: center;
-    }
-    
-    @media ${Theme.media.tablet} {
-        display: none;
     }
 `
 

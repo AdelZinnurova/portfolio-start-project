@@ -1,70 +1,42 @@
-import styled from "styled-components";
+import React from "react";
 import {SectionTitle} from "../../../../components/SectionTitle.tsx";
 import {Icon} from "../../../../components/icon/Icon.tsx";
-import {Theme} from "../../../../styles/Theme.ts";
+import {S} from "./../Contact_Styles.ts"
 
-export const ContactLink = () => {
+const socialItemsData = [
+    {
+        iconId: 'facebook'
+    },
+    {
+        iconId: 'instagram'
+    },
+    {
+        iconId: 'dribble'
+    },
+    {
+        iconId: 'sms'
+    },
+
+]
+
+export const ContactLink: React.FC = () => {
     return (
-        <StyledContactLink>
+        <S.ContactLink>
             <SectionTitle>Connect with me:</SectionTitle>
-            <Text>Satisfied with me? Please contact me</Text>
-            <SocialList>
-                <SocialItem>
-                    <SocialLink>
-                        <Icon  width={'32px'} height={'32px'} viewBox={'0 0 32 32'} iconId={'facebook'}/>
-                    </SocialLink>
-                </SocialItem>
-                <SocialItem>
-                    <SocialLink>
-                        <Icon  width={'32px'} height={'32px'} viewBox={'0 0 32 32'} iconId={'instagram'}/>
-                    </SocialLink>
-                </SocialItem>
-                <SocialItem>
-                    <SocialLink>
-                        <Icon  width={'32px'} height={'32px'} viewBox={'0 0 32 32'} iconId={'dribble'}/>
-                    </SocialLink>
-                </SocialItem>
-                <SocialItem>
-                    <SocialLink>
-                        <Icon  width={'32px'} height={'32px'} viewBox={'0 0 32 32'} iconId={'sms'}/>
-                    </SocialLink>
-                </SocialItem>
-            </SocialList>
-        </StyledContactLink>
+            <S.Text>Satisfied with me? Please contact me</S.Text>
+            <S.SocialList>
+                {socialItemsData.map((socialItem, index) => {
+                    return (
+                        <S.SocialItem key={index}>
+                            <S.SocialLink>
+                                <Icon width={'32px'} height={'32px'} viewBox={'0 0 32 32'} iconId={socialItem.iconId}/>
+                            </S.SocialLink>
+                        </S.SocialItem>
+                    )
+                })}
+            </S.SocialList>
+        </S.ContactLink>
     );
 };
 
-const StyledContactLink = styled.div``
-
-const Text = styled.p`
-    font-weight: 500;
-    font-size: 18px;
-    color: ${Theme.colors.font};
-    margin-bottom: 24px;
-
-    @media ${Theme.media.tablet} {
-        display: none;
-    }
-`
-
-const SocialList = styled.ul`
-    display: flex;
-    gap: 16px;
-
-    @media ${Theme.media.tablet} {
-        display: none;
-    }
-`
-
-const SocialItem = styled.li``
-
-const SocialLink = styled.a`
-    display: inline-block;
-    color: ${Theme.colors.accentV};
-    
-    &:hover {
-        color: ${Theme.colors.accentG};
-        transform: translateY(2px);
-    }
-`
 
