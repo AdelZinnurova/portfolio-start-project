@@ -1,5 +1,5 @@
 import React from "react";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {ContactForm} from "./contactForm/ContactForm.tsx";
 import {ContactLink} from "./contactLink/ContactLink.tsx";
 import {Container} from "../../../components/Container.ts";

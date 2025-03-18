@@ -1,6 +1,7 @@
-import {PrimaryLink} from "../../../../components/PrimaryLink.tsx";
-import {SecondaryLink} from "../../../../components/SecondaryLink.tsx";
-import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import React from "react";
+import {PrimaryLink} from "../../../../components/PrimaryLink.ts";
+import {SecondaryLink} from "../../../../components/SecondaryLink.ts";
+import {FlexWrapper} from "../../../../components/FlexWrapper.ts";
 import {S} from "./../Projects_Styles.ts"
 
 type ProjectPropsType = {

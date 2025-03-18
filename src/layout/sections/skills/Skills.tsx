@@ -1,4 +1,5 @@
-import {SectionTitle} from "../../../components/SectionTitle.tsx";
+import React from "react";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
 import {Skill} from "./skill/Skill.tsx";
 import {Container} from "../../../components/Container.ts";
 import {S} from "./Skills_Styles.ts"
@@ -36,7 +37,7 @@ const skillData = [
     }
 ]
 
-export const Skills = () => {
+export const Skills: React.FC = () => {
     return (
         <S.Skills>
             <Container>

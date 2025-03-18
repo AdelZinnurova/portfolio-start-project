@@ -1,5 +1,5 @@
 import React from "react";
-import {Button} from "../../../../components/Button.tsx";
+import {Button} from "../../../../components/Button.ts";
 import {S} from "./../Contact_Styles.ts"
 
 export const ContactForm: React.FC = () => {

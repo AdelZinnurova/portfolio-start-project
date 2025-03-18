@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme.ts";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 
 const Contact = styled.section`
     background-color: ${Theme.colors.primaryBg};

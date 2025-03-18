@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.ts";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {font} from "../../../styles/Common.ts";
 
 const About = styled.section`

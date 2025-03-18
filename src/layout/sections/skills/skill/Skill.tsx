@@ -1,5 +1,5 @@
 import {Icon} from "../../../../components/icon/Icon.tsx";
-import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../../components/FlexWrapper.ts";
 import {S} from "./../Skills_Styles.ts"
 
 type SkillPropsType = {
@@ -8,7 +8,7 @@ type SkillPropsType = {
     description: string;
 }
 
-export const Skill = (props: SkillPropsType) => {
+export const Skill: React.FC <SkillPropsType> = (props: SkillPropsType) => {
     return (
         <S.Skill>
             <FlexWrapper flexDirection={'column'} alignItems={'center'} justifyContent={'center'} gap={'6px'}>

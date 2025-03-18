@@ -2,7 +2,7 @@ import React from "react";
 import {Logo} from "../../components/logo/Logo.tsx";
 import {Menu} from "../../components/menu/Menu.tsx";
 import {Container} from "../../components/Container.ts";
-import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../components/FlexWrapper.ts";
 import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
 import {S} from "./Header_Styles.ts"
 

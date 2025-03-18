@@ -1,6 +1,7 @@
+import React from "react";
 import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon.tsx";
-import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../../components/FlexWrapper.ts";
 import {Theme} from "../../../../styles/Theme.ts";
 import {font} from "../../../../styles/Common.ts";
 
@@ -9,7 +10,7 @@ type ExperiencePropsType = {
     title: string;
 }
 
-export const Experience = (props: ExperiencePropsType) => {
+export const Experience: React.FC <ExperiencePropsType> = (props: ExperiencePropsType) => {
     return (
         <StyledExperience>
             <FlexWrapper flexDirection={'column'} justifyContent={'center'}>

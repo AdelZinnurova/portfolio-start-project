@@ -1,4 +1,5 @@
-import {SectionTitle} from "../../../components/SectionTitle.tsx";
+import React from "react";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
 import {Project} from "./project/Project.tsx";
 import socialImgOne from "./../../../assets/image/Project-1.webp"
 import socialImgTwo from "./../../../assets/image/Project-2.webp"

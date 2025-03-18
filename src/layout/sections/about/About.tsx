@@ -1,8 +1,8 @@
 import React from "react";
-import {SectionTitle} from "../../../components/SectionTitle.tsx";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
 import {Icon} from "../../../components/icon/Icon.tsx";
 import {Experience} from "./experience/Experience.tsx";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Container} from "../../../components/Container.ts";
 import {S} from "./About_Styles.ts"
 

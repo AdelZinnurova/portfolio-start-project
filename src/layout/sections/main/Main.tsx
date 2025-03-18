@@ -1,9 +1,9 @@
 import React from "react";
 import photo from '../../../assets/image/Photo.webp'
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Container} from "../../../components/Container.ts";
-import {PrimaryLink} from "../../../components/PrimaryLink.tsx";
-import {SecondaryLink} from "../../../components/SecondaryLink.tsx";
+import {PrimaryLink} from "../../../components/PrimaryLink.ts";
+import {SecondaryLink} from "../../../components/SecondaryLink.ts";
 import {S} from "./Main_Styles.ts"
 
 export const Main: React.FC = () => {
