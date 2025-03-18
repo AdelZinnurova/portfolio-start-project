@@ -18,6 +18,8 @@ const About = styled.section`
             align-items: flex-start;
         }
     }
+    
+    position: relative;
 `
 
 const TextDescription = styled.p`

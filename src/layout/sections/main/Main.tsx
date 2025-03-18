@@ -8,7 +8,7 @@ import {S} from "./Main_Styles.ts"
 
 export const Main: React.FC = () => {
     return (
-        <S.Main>
+        <S.Main id={'home'}>
             <Container>
                 <FlexWrapper alignItems="center" justifyContent={'space-between'} flexWrap={'wrap'} gap={'50px'}>
                     <S.TextWrapper>

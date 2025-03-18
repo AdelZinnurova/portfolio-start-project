@@ -3,7 +3,8 @@ import {Theme} from "../../../styles/Theme.ts";
 import {font} from "../../../styles/Common.ts";
 
 const Skills = styled.section`
-    background-color: ${Theme.colors.primaryBg}
+    background-color: ${Theme.colors.primaryBg};
+    position: relative;
 `
 
 const GridContainer = styled.div`

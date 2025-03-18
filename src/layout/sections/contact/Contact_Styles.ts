@@ -4,12 +4,13 @@ import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 
 const Contact = styled.section`
     background-color: ${Theme.colors.primaryBg};
-    
+
     @media ${Theme.media.tablet} {
         ${FlexWrapper} {
             flex-direction: column;
         }
     }
+    position: relative;
 `
 
 const ContactLink = styled.div``

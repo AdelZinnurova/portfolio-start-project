@@ -39,7 +39,7 @@ const skillData = [
 
 export const Skills: React.FC = () => {
     return (
-        <S.Skills>
+        <S.Skills id={'skills'}>
             <Container>
                 <SectionTitle>The services i offer:</SectionTitle>
                 <S.GridContainer>

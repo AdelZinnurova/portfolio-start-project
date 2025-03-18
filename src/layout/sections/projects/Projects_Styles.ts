@@ -3,6 +3,7 @@ import {Theme} from "../../../styles/Theme.ts";
 
 const Projects = styled.section`
     background-color: ${Theme.colors.primaryBg};
+    position: relative;
 `
 
 const SectionText = styled.p`

@@ -28,7 +28,7 @@ const ExperienceData = [
 
 export const About: React.FC = () => {
     return (
-        <S.About>
+        <S.About id={'aboutMe'}>
             <Container>
                 <SectionTitle>About me:</SectionTitle>
                 <S.TextDescription>Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and

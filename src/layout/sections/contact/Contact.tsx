@@ -7,7 +7,7 @@ import {S} from "./Contact_Styles.ts"
 
 export const Contact: React.FC = () => {
     return (
-        <S.Contact>
+        <S.Contact id={'contact'}>
             <Container>
                 <FlexWrapper justifyContent={'space-between'}>
                     <ContactLink/>

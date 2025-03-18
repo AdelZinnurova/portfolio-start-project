@@ -28,7 +28,7 @@ const projectData = [
 
 export const Projects: React.FC = () => {
     return (
-        <S.Projects>
+        <S.Projects id={'projects'}>
             <Container>
                 <SectionTitle>Featured projects:</SectionTitle>
                 <S.SectionText>I have worked on many projects over the course of being a Web Developer, here are a few
